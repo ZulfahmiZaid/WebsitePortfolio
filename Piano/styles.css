@@ -1,0 +1,55 @@
+@font-face {
+    font-family: myFont;
+    src: url("fonts/Fruit Days.ttf");
+}
+html {
+    box-sizing: border-box;
+}
+body{
+    background-image: url("img/img1.png");
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+#piano {
+    background-color: #343434;
+    width: 992px;
+    height: 290px;
+    margin: 200px auto;
+    padding: 90px 20px 0 20px;
+    position: relative;
+    overflow: hidden ;
+    border-radius: 10px;
+    opacity: 0.92;
+}
+.logo {
+    font-family: myFont, serif;
+    width: 100%;
+    position: absolute;
+    top: 10px;
+    margin: 0;
+    color: ghostwhite;
+}
+
+@media (max-width: 768px) {
+    #piano {
+        width: 358px;
+    }
+
+    .keys {
+        width: 318px;
+    }
+
+    .logo {
+        width: 150px;
+    }
+}
+@media (max-width: 1199px) and (min-width: 769px) {
+    #piano {
+        width: 675px;
+    }
+
+    .keys {
+        width: 633px;
+    }
+}
