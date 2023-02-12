@@ -659,14 +659,12 @@ textarea{
         padding: initial;
         font-size: 1.5rem;
         justify-content: center;
-        background-color: #f0f0f0;
         border-radius: 10px;
     }
     .NavInfo{
         width: 90%;
         height: 80%;
         font-size: 1.5rem;
-        background-color: #f0f0f0;
         border-radius: 10px;
     }
     .Empty2,.SocialDesc{
