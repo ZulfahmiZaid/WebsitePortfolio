@@ -88,8 +88,7 @@ button:hover{
 .WelcomeMessage{
     width: 80%;
     height: 25%;
-    background-color: black;
-    color: white;
+    background-color: white;
     display: flex;
     font-size: 1.9rem;
     flex-direction: column;
@@ -102,7 +101,7 @@ button:hover{
 .point-right{
     width: 100%;
     height: 5%;
-    background-color: black;
+    background-color: white;
     position: relative;
     clip-path: polygon(12% 0%, 90% 0%, 100% 100%);
     filter: opacity(0.8);
@@ -112,8 +111,7 @@ button:hover{
     width: 80%;
     height: 40%;
     font-size: 1.7rem;
-    background-color: black;
-    color: white;
+    background-color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -129,7 +127,7 @@ button:hover{
 .point-left{
     width: 100%;
     height: 5%;
-    background-color: black;
+    background-color: white;
     position: relative;
     clip-path: polygon(10% 0%, 88% 0%, 0% 100%);
     top: -0.3px;
@@ -409,24 +407,16 @@ textarea{
     height: 25%;
     border: 2px solid white;
     border-radius: 10px;
+    overflow: hidden;
 }
-.first{
-    background-color: darkred;
+.Project img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
-.second{
-    background-color: darksalmon;
-}
-.third{
-    background-color: darkgoldenrod;
-}
-.fourth{
-    background-color: darkblue;
-}
-.fifth{
-    background-color: darkcyan;
-}
-.sixth{
-    background-color: darkslateblue;
+.Project:hover{
+    border: 2px solid darkturquoise;
+    animation: pop 0.3s linear;
 }
 .PCB{
     text-align: center;
@@ -468,6 +458,9 @@ textarea{
     100%{
         background-image: url("Images/Pixel_1.png");
     }
+}
+@keyframes pop {
+    50%{transform: scale(1.15);}
 }
 @keyframes button-dropdown {
     0%{
