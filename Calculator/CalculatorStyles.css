@@ -1,0 +1,133 @@
+html,
+body,
+table,
+button{
+    width: 100%;
+    height: 100%;
+    font-size: 1.2rem;
+}
+*{
+    font-family: Arial, serif;
+}
+html{
+    overflow: hidden;
+}
+body{
+    background-color: hsl(240,90%,3%,0.95);
+}
+body,.output{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.output{
+    position: relative;
+}
+.calculator{
+    width: 400px;
+    height: 600px;
+    display: grid;
+    padding: 5px;
+    background-color: hsl(0,100%,0%,0.9);
+    grid-template-rows: 30% 70%;
+    border: 2px #f0f0f0 solid;
+    border-radius: 5px;
+    z-index: 2;
+}
+.showCalculations{
+    width: 80%;
+    height: 60%;
+    font-size: 3rem;
+    position: relative;
+    color: #f0f0f0;
+    border-bottom: 2px solid hsl(0, 0%, 50%,0.8);
+    overflow: hidden;
+    z-index: 0;
+}
+.results{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.error{
+    width: 400px;
+    height: 2rem;
+    margin: 0;
+    display: none;
+    padding-top: 10px;
+    position: absolute;
+    background-color: hsl(0,100%,28%,1);
+    border-radius: 3px;
+    text-align: center;
+    color: #f0f0f0;
+    animation: none;
+    z-index: 1;
+}
+.fa-triangle-exclamation{
+    color: yellow;
+}
+table{
+    padding: 2px;
+}
+button{
+    background-color: hsl(0, 0%, 20%,0.8);
+    color: #f0f0f0;
+    border-radius: 3px;
+    border: none;
+}
+.numbers:hover{
+    background-color: hsl(0, 0%, 40%,0.8);
+}
+button:hover{
+    cursor: pointer;
+}
+td{
+    width: 25%;
+}
+#decimal{
+    font-size: 2rem;
+}
+tr{
+    height: 20%;
+}
+#CE{
+    background-color: hsl(0,100%,28%,1);
+}
+#CE:hover{
+    background-color: hsl(0,100%, 20%,1);
+}
+#DEL,#equals{
+    background-color:hsl(39, 100%, 60%, 0.8);
+}
+#DEL:hover,
+#equals:hover{
+    background-color:hsl(39, 100%, 40%, 0.8);
+}
+#plus,#minus,#multiply,#divide{
+    background-color: hsl(171, 100%, 24%, 0.94);
+}
+#plus:hover,
+#minus:hover,
+#multiply:hover,
+#divide:hover{
+    background-color: hsl(171, 100%, 15%, 0.94);
+}
+
+@keyframes out {
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+@keyframes in {
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(0);
+    }
+}
+
