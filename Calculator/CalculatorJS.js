@@ -40,14 +40,16 @@ buttons.forEach((button) => {
         }
         else {
             if(button.id === "multiply"){
-                output.innerHTML += "x";
+                output.innerHTML += "*";
             }else if(button.id === "divide"){
                 output.innerHTML += "/";
             } else if(button.id === "plus"){
                 output.innerHTML += "+";
             } else if(button.id === "minus"){
                 output.innerHTML += "-";
-            } else{
+            } else if(button.id === "decimal") {
+                output.innerHTML += ".";
+            } else {
                 output.innerHTML += button.id;
             }
         }
