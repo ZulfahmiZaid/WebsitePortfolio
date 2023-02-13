@@ -46,8 +46,8 @@ setInterval(()=>{
       location.reload();
 
    if(detector.tablet() !== null && window.innerWidth < window.innerHeight){
-      profilePic.style.width = "300px";
-      profilePic.style.height = "300px";
+      profilePic.style.width = "80%";
+      profilePic.style.height = "80%";
    }
 
 },100);
