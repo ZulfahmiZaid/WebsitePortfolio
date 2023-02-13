@@ -45,9 +45,8 @@ setInterval(()=>{
    if(media_active !== check_changes)
       location.reload();
 
-   if(detector.tablet() !== null && window.innerWidth < window.innerHeight){
-      profilePic.style.width = "80%";
-      profilePic.style.height = "80%";
+   if(mobile === null && detector.tablet() !== null && window.innerWidth < window.innerHeight){
+      profilePic.style.color = "yellow";
    }
 
 },100);
