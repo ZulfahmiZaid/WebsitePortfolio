@@ -45,10 +45,6 @@ setInterval(()=>{
    if(media_active !== check_changes)
       location.reload();
 
-   if(mobile === null && detector.tablet() !== null && window.innerWidth < window.innerHeight){
-      profilePic.style.color = "yellow";
-   }
-
 },100);
 
 about_btn.addEventListener("click", function() {
