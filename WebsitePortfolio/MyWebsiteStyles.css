@@ -599,12 +599,6 @@ textarea{
         transform: translateY(0%);
     }
 }
-@media only screen and (max-width: 480px){
-    .ProfilePic{
-        width: 250px;
-        height: 250px;
-    }
-}
 @media only screen and (max-width: 1000px) and (max-height: 1000px){
     .PicWrapper{
         height: 50%;
@@ -734,6 +728,12 @@ textarea{
     }
     .Close-Projects .fa-xmark{
         font-size: 1rem;
+    }
+}
+@media only screen and (max-width: 480px){
+    .ProfilePic{
+        width: 250px;
+        height: 250px;
     }
 }
 
