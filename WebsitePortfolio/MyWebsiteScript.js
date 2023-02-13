@@ -37,10 +37,10 @@ const html_ws = document.querySelector("html");
 html_ws.style.width = window.innerWidth.toString();
 html_ws.style.height = window.innerHeight.toString();
 
-var media_active = (window.innerWidth < 1400 && window.innerHeight < 1000);
+var media_active = (window.innerWidth <= 1400);
 
 setInterval(()=>{
-   let check_changes = (window.innerWidth < 1400 && window.innerHeight < 1000);
+   let check_changes = (window.innerWidth <= 1400);
 
    if(media_active !== check_changes)
       location.reload();
