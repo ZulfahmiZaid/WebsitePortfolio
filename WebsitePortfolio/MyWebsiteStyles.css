@@ -732,7 +732,7 @@ textarea{
     }
 }
 
-@media only screen and (orientation: portrait){
+@media (orientation: portrait){
     .ProfilePic{
         width: initial;
         height: initial;
