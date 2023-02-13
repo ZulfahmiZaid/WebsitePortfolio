@@ -734,7 +734,7 @@ textarea{
         font-size: 1rem;
     }
 }
-@media only screen and (max-height: 1000px){
+@media only screen and (min-width: 480px){
     .ProfilePic{
         width: 250px;
         height: 250px;
