@@ -711,6 +711,7 @@ textarea{
     }
     .Projects{
         grid-template-columns: 50% 0% 50%;
+        overflow-y: scroll;
     }
     .Project{
         width: 80%;
@@ -728,6 +729,13 @@ textarea{
     }
     .Close-Projects .fa-xmark{
         font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 1400px) and (min-height: 1000px){
+    .ProfilePic{
+        width: 300px;
+        height: 300px;
     }
 }
 
