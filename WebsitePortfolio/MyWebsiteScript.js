@@ -45,6 +45,11 @@ setInterval(()=>{
    if(media_active !== check_changes)
       location.reload();
 
+   if(detector.tablet() && window.innerWidth < window.innerHeight){
+      profilePic.style.width = "400px";
+      profilePic.style.height = "400px";
+   }
+
 },100);
 
 about_btn.addEventListener("click", function() {
