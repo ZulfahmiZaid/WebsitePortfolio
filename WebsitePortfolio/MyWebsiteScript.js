@@ -23,7 +23,6 @@ const dialogue_all = document.querySelector(".Dialogue");
 const popup_C1 = document.querySelector(".C1");
 const popup_C2 = document.querySelector(".C2");
 
-let check_window = (window.innerHeight < 1000 && window.innerWidth < 1000);
 let detector = new MobileDetect(window.navigator.userAgent);
 let mobile = detector.mobile();
 
@@ -38,8 +37,18 @@ const html_ws = document.querySelector("html");
 html_ws.style.width = window.innerWidth.toString();
 html_ws.style.height = window.innerHeight.toString();
 
+var media_active = (window.innerWidth < 1000 && window.innerHeight < 1000);
+
+setInterval(()=>{
+   let check_changes = (window.innerWidth < 1000 && window.innerHeight < 1000);
+
+   if(media_active !== check_changes && media_active)
+      location.reload();
+
+},500);
+
 about_btn.addEventListener("click", function() {
-   if(mobile === null) {
+   if(mobile === null && !media_active) {
       popup_about.style.display = "grid";
       popup_about.style.animation = "about-slide-in 2s ease";
 
@@ -70,7 +79,7 @@ close_abt_btn.addEventListener("click", function (){
 
    popup_about.style.animation = "about-slide-out 2s ease";
 
-   if(mobile === null) {
+   if(mobile === null && !media_active) {
       profilePic.style.animation = "pic-reset-from-about 2s ease forwards";
    }else{
       profilePic.style.animation = "contact-slide-in 2s ease forwards";
@@ -81,7 +90,7 @@ close_abt_btn.addEventListener("click", function (){
    setTimeout(() => {
       popup_about.style.display = "none";
 
-      if (mobile === null) {
+      if (mobile === null && !media_active) {
       dialogue_nav.style.animation = "about-slide-in 1s ease forwards";
       dialogue_welcome.style.animation = "contact-slide-in 1s ease forwards";
       }
@@ -103,7 +112,7 @@ contact_btn.addEventListener("click", function (){
    popup_contact.style.display = "flex";
    popup_contact.style.animation = "contact-slide-in 2s ease";
 
-   if(mobile === null) {
+   if(mobile === null && !media_active) {
       profilePic.style.animation = "pic-slide-left 2s ease forwards";
       dialogue_nav.style.animation = "nav-slide-down 1s ease forwards";
       dialogue_welcome.style.animation = "PCB-slide-up 1s ease forwards";
@@ -126,7 +135,7 @@ contact_btn.addEventListener("click", function (){
 close_con_btn.addEventListener("click", function (){
    popup_contact.style.animation = "contact-slide-out 2s ease";
 
-   if(mobile === null) {
+   if(mobile === null && !media_active) {
       profilePic.style.animation = "pic-reset-from-contact 2s ease forwards";
    }else{
       profilePic.style.animation = "about-slide-in 2s ease forwards";
@@ -136,7 +145,7 @@ close_con_btn.addEventListener("click", function (){
    setTimeout(() => {
       popup_contact.style.display = "none";
 
-      if(mobile === null) {
+      if(mobile === null && !media_active) {
          dialogue_nav.style.animation = "about-slide-in 1s ease forwards";
          dialogue_welcome.style.animation = "contact-slide-in 1s ease forwards";
       }
@@ -160,7 +169,7 @@ project_btn.addEventListener("click", function (){
    dialogue_nav.style.animation = "about-slide-out 1s ease forwards";
    dialogue_welcome.style.animation = "contact-slide-out 1s ease forwards";
 
-   if(mobile){
+   if(mobile || media_active){
       profilePic.style.animation = "about-slide-out 1s ease forwards";
    }
 
@@ -187,7 +196,7 @@ close_pro_btn.addEventListener("click", function (){
       popup_C1.style.removeProperty("animation");
       popup_C2.style.removeProperty("animation");
 
-      if(mobile === null) {
+      if(mobile === null && !media_active) {
          dialogue_nav.style.animation = "PCB-slide-down 1s ease forwards";
          dialogue_welcome.style.animation = "welcome-slide-up 1s ease forwards";
       }else{
