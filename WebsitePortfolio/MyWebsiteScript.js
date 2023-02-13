@@ -33,6 +33,10 @@ const icon_active_color = "white";
 const button_enabled_color = "#f0f0f0";
 const button_disabled_color = "darkgray";
 
+const html_ws = document.querySelector("html");
+
+html_ws.style.width = window.innerWidth.toString();
+html_ws.style.height = window.innerHeight.toString();
 
 about_btn.addEventListener("click", function() {
    if(mobile === null) {
