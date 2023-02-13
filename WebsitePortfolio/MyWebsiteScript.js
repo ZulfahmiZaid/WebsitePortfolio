@@ -42,10 +42,10 @@ var media_active = (window.innerWidth < 1000 && window.innerHeight < 1000);
 setInterval(()=>{
    let check_changes = (window.innerWidth < 1000 && window.innerHeight < 1000);
 
-   if(media_active !== check_changes && media_active)
+   if(media_active !== check_changes)
       location.reload();
 
-},1);
+},100);
 
 about_btn.addEventListener("click", function() {
    if(mobile === null && !media_active) {
