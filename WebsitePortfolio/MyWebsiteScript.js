@@ -45,7 +45,7 @@ setInterval(()=>{
    if(media_active !== check_changes && media_active)
       location.reload();
 
-},500);
+},1);
 
 about_btn.addEventListener("click", function() {
    if(mobile === null && !media_active) {
