@@ -23,6 +23,7 @@ const dialogue_all = document.querySelector(".Dialogue");
 const popup_C1 = document.querySelector(".C1");
 const popup_C2 = document.querySelector(".C2");
 
+let check_window = (window.innerHeight < 1000 && window.innerWidth < 1000);
 let detector = new MobileDetect(window.navigator.userAgent);
 let mobile = detector.mobile();
 
@@ -31,6 +32,7 @@ const icon_active_color = "white";
 
 const button_enabled_color = "#f0f0f0";
 const button_disabled_color = "darkgray";
+
 
 about_btn.addEventListener("click", function() {
    if(mobile === null) {

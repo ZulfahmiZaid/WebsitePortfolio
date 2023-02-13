@@ -18,16 +18,18 @@
     filter: opacity(0.8);
 }
 html{
-    height: 100%;
+    height: 100vh;
     font-family: round, serif;
 }
 body{
-    height: 100%;
+    height: 100vh;
     margin: 0;
     padding: 0;
     background-image: url("Images/Pixel_1.png");
     background-size: cover;
     animation: change 20s infinite ease-in-out;
+    min-width: 500px;
+    min-height: 700px;
     overflow: hidden;
 }
 .Header{
@@ -308,18 +310,15 @@ button:hover{
 .ContactForm{
     width: 80%;
     height: 60%;
+    display: grid;
+    grid-template-rows: 3rem auto;
     background-color: white;
     border-radius: 10px;
 }
 .ContactForm p{
-    width: 100%;
-    height: 2rem;
     text-align: center;
 }
 .ContactForm form{
-    width: 90%;
-    height: auto;
-    margin: 0 auto 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -334,13 +333,13 @@ textarea{
     border-bottom: 1px solid black;
 }
 input[type="email"],input[type="tel"],textarea{
-    width: 98%;
+    width: 90%;
 }
 input[type="submit"]{
+    width: 90%;
     color: white;
     font-family: round, serif;
     background-color: lightseagreen;
-    width: 100%;
     border: 1px transparent;
 }
 input[type="submit"]:hover{
@@ -351,10 +350,10 @@ input:focus, textarea:focus{
     outline: 0;
 }
 form input{
-    height: 2rem;
+    height: 10%;
 }
 textarea{
-    height: 9rem;
+    height: 35%;
 }
 ::placeholder{
     font-family: round, serif;
@@ -376,10 +375,13 @@ textarea{
     border-radius: 10px;
     text-align: center;
 }
+.MyContactInfo p{
+    margin: 0;
+    padding: 0;
+}
 .Phone, .Email{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    display: grid;
+    place-items: center;
 }
 .fa-phone-volume, .fa-envelope-open-text{
     padding-top: 10px;
@@ -599,7 +601,7 @@ textarea{
         transform: translateY(0%);
     }
 }
-@media only screen and (max-width: 1000px){
+@media only screen and (max-width: 1000px) and (max-height: 1000px){
     .PicWrapper{
         height: 50%;
         bottom: 50%;
@@ -692,16 +694,19 @@ textarea{
     }
     .Socials{
         grid-template-columns: auto;
+        overflow-y: scroll;
     }
     .SocialIcons>ul>li:nth-child(1)::after{
+        display: block;
         margin-top: 2px;
         content: "Artwork";
-        font-size: 0.8rem;
+        font-size: 0.8em;
     }
     .SocialIcons>ul>li:nth-child(2)::after{
+        display: block;
         content: "Photography";
         margin-top: -2px;
-        font-size: 0.8rem;
+        font-size: 0.8em;
     }
     .Contact{
         width:100%;
@@ -724,7 +729,16 @@ textarea{
         left: 33.33%;
         right: 33.33%;
         width: 33.33%;
-        height: 2rem;
+        height: 1.5rem;
         padding-right:10px;
+    }
+    .Close-Projects .fa-xmark{
+        font-size: 1rem;
+    }
+}
+@media only screen and (max-height: 700px){
+    .ProfilePic{
+        width: 250px;
+        height: 250px;
     }
 }
