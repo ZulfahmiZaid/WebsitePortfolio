@@ -28,8 +28,6 @@ body{
     background-image: url("Images/Pixel_1.png");
     background-size: cover;
     animation: change 20s infinite ease-in-out;
-    min-width: 500px;
-    min-height: 700px;
     overflow: hidden;
 }
 .Header{
