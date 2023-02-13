@@ -732,7 +732,7 @@ textarea{
     }
 }
 
-@media only screen and (orientation: portrait) and (min-height: 800px) {
+@media only screen and (max-width: 1400px) and (min-height: 500px) {
     .ProfilePic{
         width: 400px;
         height: 400px;
