@@ -660,7 +660,7 @@ textarea{
         animation: contact-slide-in 3s ease;
     }
     .WelcomeMessage{
-        width: 60%;
+        width: 70%;
         height: 100%;
         padding: initial;
         font-size: 1.3rem;
@@ -668,7 +668,7 @@ textarea{
         border-radius: 9px;
     }
     .NavInfo{
-        width: 60%;
+        width: 70%;
         height: 80%;
         font-size: 1.3rem;
         border-radius: 9px;
