@@ -275,14 +275,14 @@ button:hover{
 .HTML span,.CSS span{
     width: 85%;
 }
-.PHP span{
-    width: 80%;
-}
-.MySQL span, .CPP span{
+.PHP span, .MySQL span{
     width: 70%;
 }
+.CPP span{
+     width: 70%;
+}
 .JavaScript span{
-    width: 60%;
+    width: 50%;
 }
 .Java span{
     width: 75%;
