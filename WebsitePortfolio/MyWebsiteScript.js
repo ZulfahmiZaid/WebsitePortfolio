@@ -20,6 +20,20 @@ const dialogue_welcome = document.querySelector(".Welcome");
 
 const dialogue_all = document.querySelector(".Dialogue");
 
+const myself_list = document.querySelector(".MyselfLink");
+const project_list = document.querySelector(".ProjectsLink");
+const contact_list = document.querySelector(".ContactLink");
+
+myself_list.addEventListener("click", () => {
+   about_btn.click();
+});
+project_list.addEventListener("click", () => {
+   project_btn.click();
+});
+contact_list.addEventListener("click", () => {
+   contact_btn.click();
+});
+
 const popup_C1 = document.querySelector(".C1");
 const popup_C2 = document.querySelector(".C2");
 

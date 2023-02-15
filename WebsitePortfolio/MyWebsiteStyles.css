@@ -35,7 +35,7 @@ body{
     flex-direction: row;
     justify-content: flex-end;
     background-color: transparent;
-    height: 10%;
+    height: 8%;
     margin: 0;
     padding: 0;
     filter: opacity(0.8);
@@ -87,12 +87,12 @@ button:hover{
     animation: about-slide-in 3s ease;
 }
 .WelcomeMessage{
-    width: 80%;
+    width: 60%;
     height: 25%;
     background-color: black;
     color: white;
     display: flex;
-    font-size: 1.9rem;
+    font-size: 1.7rem;
     flex-direction: column;
     text-align: center;
     align-items: center;
@@ -101,44 +101,56 @@ button:hover{
     filter: opacity(0.8);
 }
 .point-right{
-    width: 100%;
+    width: 80%;
     height: 5%;
     background-color: black;
     position: relative;
-    clip-path: polygon(12% 0%, 90% 0%, 100% 100%);
+    clip-path: polygon(14% 0%, 87.5% 0%, 100% 100%);
     filter: opacity(0.8);
     top: -0.4px;
 }
 .NavInfo{
-    width: 80%;
-    height: 40%;
-    font-size: 1.7rem;
+    width: 60%;
+    height: 30%;
+    font-size: 1.5rem;
     background-color: black;
     color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
     border-radius: 9px 9px 0 9px;
     filter: opacity(0.8);
 }
-.NavInfo p, .NavInfo ul, .NavInfo li{
-    width: 70%;
-    margin: 0;
-    padding: 0;
+.NavInfo p{
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.NavInfo ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.NavInfo li{
+    width: 100%;
+    padding: 5px;
+}
+.MyselfLink:hover, .ProjectsLink:hover, .ContactLink:hover{
+    color: darkturquoise;
+    cursor: pointer;
+    animation: pop 0.3s linear;
 }
 .point-left{
-    width: 100%;
+    width: 80%;
     height: 5%;
     background-color: black;
     position: relative;
-    clip-path: polygon(10% 0%, 88% 0%, 0% 100%);
+    clip-path: polygon(12.5% 0%, 86% 0%, 0% 100%);
     top: -0.3px;
     filter: opacity(0.8);
 }
 .BackgroundContent{
     position: relative;
-    height: 90%;
+    height: 92%;
     margin: 0;
     padding: 0;
     overflow: hidden;
@@ -452,10 +464,10 @@ textarea{
         background-image: url("Images/Pixabay1.jpg");
     }
     25%{
-        background-image: url("Images/Pixabay2.jpg");
+        background-image: url("Images/Pixabay2.png");
     }
     50%{
-        background-image: url("Images/Pixabay3.jpg");
+        background-image: url("Images/Pixabay3.png");
     }
     75%{
         background-image: url("Images/Pixabay4.png");
@@ -648,17 +660,17 @@ textarea{
         animation: contact-slide-in 3s ease;
     }
     .WelcomeMessage{
-        width: 90%;
+        width: 60%;
         height: 100%;
         padding: initial;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         justify-content: center;
         border-radius: 9px;
     }
     .NavInfo{
-        width: 90%;
+        width: 60%;
         height: 80%;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         border-radius: 9px;
     }
     .Empty2,.SocialDesc{
