@@ -31,8 +31,6 @@ body{
 .BG-img{
     position: absolute;
     object-fit: cover;
-    background: url("Images/Pixabay1.png");
-    background-size: cover;
     width: 100%;
     height: 100%;
     animation: change 15s ease-in-out infinite;
@@ -471,18 +469,23 @@ textarea{
 @keyframes change {
     0%{
         background: url("Images/Pixabay1.png");
+        background-size: cover;
     }
     25%{
         background: url("Images/Pixabay2.png");
+        background-size: cover;
     }
     50%{
         background: url("Images/Pixabay3.png");
+        background-size: cover;
     }
     75%{
         background: url("Images/Pixabay4.png");
+        background-size: cover;
     }
     100%{
         background: url("Images/Pixabay1.png");
+        background-size: cover;
     }
 }
 @keyframes pop {
