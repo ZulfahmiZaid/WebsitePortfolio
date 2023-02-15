@@ -25,9 +25,9 @@ body{
     height: 100%;
     margin: 0;
     padding: 0;
-    background-image: url("/images/Pixabay1.jpg");
+    background-image: url("images/Pixabay1.jpg");
     background-size: cover;
-    animation: change 15s infinite ease-in-out;
+    animation: change 25s infinite ease-in-out;
     overflow: hidden;
 }
 .Header{
@@ -43,6 +43,7 @@ body{
 .Header button {
     width: 33.33%;
     font-size: 1.2rem;
+    background-color: black;
     border: none;
     animation: button-dropdown 2s ease forwards;
 }
@@ -50,7 +51,7 @@ button:hover{
     cursor: pointer;
 }
 .fa-user,.fa-screwdriver-wrench,.fa-envelope {
-    color: black;
+    color: white;
     padding: 0 10px 0 0;
     font-size: 1.8rem;
 }
@@ -88,20 +89,21 @@ button:hover{
 .WelcomeMessage{
     width: 80%;
     height: 25%;
-    background-color: white;
+    background-color: black;
+    color: white;
     display: flex;
     font-size: 1.9rem;
     flex-direction: column;
     text-align: center;
     align-items: center;
     padding-top: 10%;
-    border-radius: 10px 10px 10px 0;
+    border-radius: 9px 9px 9px 0;
     filter: opacity(0.8);
 }
 .point-right{
     width: 100%;
     height: 5%;
-    background-color: white;
+    background-color: black;
     position: relative;
     clip-path: polygon(12% 0%, 90% 0%, 100% 100%);
     filter: opacity(0.8);
@@ -111,12 +113,13 @@ button:hover{
     width: 80%;
     height: 40%;
     font-size: 1.7rem;
-    background-color: white;
+    background-color: black;
+    color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    border-radius: 10px 10px 0 10px;
+    border-radius: 9px 9px 0 9px;
     filter: opacity(0.8);
 }
 .NavInfo p, .NavInfo ul, .NavInfo li{
@@ -127,7 +130,7 @@ button:hover{
 .point-left{
     width: 100%;
     height: 5%;
-    background-color: white;
+    background-color: black;
     position: relative;
     clip-path: polygon(10% 0%, 88% 0%, 0% 100%);
     top: -0.3px;
@@ -153,9 +156,11 @@ button:hover{
 .ProfilePic{
     width: 450px;
     height: 450px;
-    background-color: white;
+    background-image: url("images/VD_OF.png");
+    background-size: contain;
+    border: 3px solid white;
     border-radius: 50%;
-    filter: opacity(0.8);
+    filter: opacity(0.9);
 }
 .About{
     width: 50%;
@@ -444,19 +449,19 @@ textarea{
 }
 @keyframes change {
     0%{
-        background-image: url("/images/Pixabay1.jpg");
+        background-image: url("images/Pixabay1.jpg");
     }
     25%{
-        background-image: url("/images/Pixabay2.jpg");
+        background-image: url("images/Pixabay2.jpg");
     }
     50%{
-        background-image: url("/images/Pixabay3.jpg");
+        background-image: url("images/Pixabay3.jpg");
     }
     75%{
-        background-image: url("/images/Pixabay4.jpg");
+        background-image: url("images/Pixabay4.png");
     }
     100%{
-        background-image: url("/images/Pixabay1.jpg");
+        background-image: url("images/Pixabay1.jpg");
     }
 }
 @keyframes pop {
@@ -648,13 +653,13 @@ textarea{
         padding: initial;
         font-size: 1.5rem;
         justify-content: center;
-        border-radius: 10px;
+        border-radius: 9px;
     }
     .NavInfo{
         width: 90%;
         height: 80%;
         font-size: 1.5rem;
-        border-radius: 10px;
+        border-radius: 9px;
     }
     .Empty2,.SocialDesc{
         display: none;
@@ -712,6 +717,7 @@ textarea{
     .Projects{
         grid-template-columns: 50% 0% 50%;
         overflow-y: scroll;
+        overflow-x: hidden;
     }
     .Project{
         width: 80%;

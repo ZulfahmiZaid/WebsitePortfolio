@@ -26,10 +26,10 @@ const popup_C2 = document.querySelector(".C2");
 let detector = new MobileDetect(window.navigator.userAgent);
 let mobile = detector.mobile();
 
-const button_active_color = "black";
+const button_active_color = "white";
 const icon_active_color = "white";
 
-const button_enabled_color = "#f0f0f0";
+const button_enabled_color = "black";
 const button_disabled_color = "darkgray";
 
 const html_ws = document.querySelector("html");
@@ -64,7 +64,6 @@ about_btn.addEventListener("click", function() {
       dialogue_all.style.animation = "contact-slide-out 2s ease forwards";
    }
 
-   about_btn.style.backgroundColor = button_active_color;
    about_icon.style.color = icon_active_color;
    about_btn.disabled = true;
 
@@ -121,7 +120,6 @@ contact_btn.addEventListener("click", function (){
       dialogue_all.style.animation = "about-slide-out 2s ease forwards";
    }
 
-   contact_btn.style.backgroundColor = button_active_color;
    contact_icon.style.color = icon_active_color;
    contact_btn.disabled = true;
 
@@ -173,7 +171,6 @@ project_btn.addEventListener("click", function (){
       profilePic.style.animation = "about-slide-out 1s ease forwards";
    }
 
-   project_btn.style.backgroundColor = button_active_color;
    project_icon.style.color = icon_active_color;
    project_btn.disabled = true;
 
