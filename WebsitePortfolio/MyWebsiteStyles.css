@@ -25,9 +25,9 @@ body{
     height: 100%;
     margin: 0;
     padding: 0;
-    background-image: url("Images/Pixel_1.png");
+    background-image: url("/images/Pixabay1.jpg");
     background-size: cover;
-    animation: change 20s infinite ease-in-out;
+    animation: change 15s infinite ease-in-out;
     overflow: hidden;
 }
 .Header{
@@ -444,19 +444,19 @@ textarea{
 }
 @keyframes change {
     0%{
-        background-image: url("Images/Pixel_1.png");
+        background-image: url("/images/Pixabay1.jpg");
     }
     25%{
-        background-image: url("Images/Pixel_2.png");
+        background-image: url("/images/Pixabay2.jpg");
     }
     50%{
-        background-image: url("Images/Pixel_3.png");
+        background-image: url("/images/Pixabay3.jpg");
     }
     75%{
-        background-image: url("Images/Pixel_4.png");
+        background-image: url("/images/Pixabay4.jpg");
     }
     100%{
-        background-image: url("Images/Pixel_1.png");
+        background-image: url("/images/Pixabay1.jpg");
     }
 }
 @keyframes pop {
