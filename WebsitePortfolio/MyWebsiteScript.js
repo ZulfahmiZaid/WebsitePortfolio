@@ -229,3 +229,45 @@ close_pro_btn.addEventListener("click", function (){
    }, 1000);
 });
 
+/*
+const BG_images = ["Pixabay1.png", "Pixabay2.png", "Pixabay3.png", "Pixabay4.png"]
+const background = document.querySelector(".BG-img");
+var index = 1;
+
+//change background
+function fadeIn() {
+   if(index >= 4)
+      index = 0;
+
+   background.src = "Images/" + BG_images[index].toString();
+   let opacity = 0;
+   background.style.opacity = opacity.toString();
+   setInterval(() => {
+      if(opacity >= 1)
+         clearInterval();
+      else{
+         opacity += 0.1;
+         background.style.opacity = opacity.toString();
+      }
+   }, 100);
+   index++;
+}
+
+function fadeOut() {
+   let opacity = background.style.opacity;
+   background.style.opacity = opacity.toString();
+   setInterval(() => {
+      if(opacity <= 0)
+         clearInterval();
+      else{
+         opacity -= 0.1;
+         background.style.opacity = opacity.toString();
+      }
+   }, 100);
+}
+
+setInterval(()=>{
+
+},5000);
+
+*/
