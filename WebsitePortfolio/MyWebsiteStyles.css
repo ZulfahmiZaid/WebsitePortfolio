@@ -126,6 +126,8 @@ button:hover{
     padding-bottom: 0;
 }
 .NavInfo ul{
+    margin: 0;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -660,7 +662,8 @@ textarea{
         animation: contact-slide-in 3s ease;
     }
     .WelcomeMessage{
-        width: 70%;
+        width: 80%;
+        max-width: 600px;
         height: 100%;
         padding: initial;
         font-size: 1.3rem;
@@ -668,7 +671,8 @@ textarea{
         border-radius: 9px;
     }
     .NavInfo{
-        width: 70%;
+        width: 80%;
+        max-width: 600px;
         height: 80%;
         font-size: 1.3rem;
         border-radius: 9px;
