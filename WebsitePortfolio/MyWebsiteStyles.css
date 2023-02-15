@@ -156,7 +156,7 @@ button:hover{
 .ProfilePic{
     width: 450px;
     height: 450px;
-    background-image: url("images/VD_OF.png");
+    background-image: url("/images/VD_OF.png");
     background-size: contain;
     border: 3px solid white;
     border-radius: 50%;
@@ -449,19 +449,19 @@ textarea{
 }
 @keyframes change {
     0%{
-        background-image: url("images/Pixabay1.jpg");
+        background-image: url("/images/Pixabay1.jpg");
     }
     25%{
-        background-image: url("images/Pixabay2.jpg");
+        background-image: url("/images/Pixabay2.jpg");
     }
     50%{
-        background-image: url("images/Pixabay3.jpg");
+        background-image: url("/images/Pixabay3.jpg");
     }
     75%{
-        background-image: url("images/Pixabay4.png");
+        background-image: url("/images/Pixabay4.png");
     }
     100%{
-        background-image: url("images/Pixabay1.jpg");
+        background-image: url("/images/Pixabay1.jpg");
     }
 }
 @keyframes pop {
