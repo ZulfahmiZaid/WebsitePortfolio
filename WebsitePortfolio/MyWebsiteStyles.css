@@ -146,6 +146,10 @@ button:hover{
 .SocialIcons li{
     pointer-events: none;
 }
+.Socials a{
+    text-decoration: none;
+    color: inherit;
+}
 .MyselfLink:hover, .ProjectsLink:hover, .ContactLink:hover, .Socials li:hover{
     color: darkturquoise;
     cursor: pointer;
