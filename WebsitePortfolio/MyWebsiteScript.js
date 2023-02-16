@@ -43,8 +43,7 @@ let mobile = detector.mobile();
 const body = document.querySelector("body");
 
 if(mobile === null && detector.tablet() === null) {
-   body.style.minHeight = "600px !important;";
-   body.style.minWidth = "600px !important;";
+   body.style.cssText = "min-width: 600px !important; min-height: 600px !important;";
 }
 
 const button_active_color = "white";
