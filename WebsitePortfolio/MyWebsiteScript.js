@@ -41,6 +41,7 @@ let detector = new MobileDetect(window.navigator.userAgent);
 let mobile = detector.mobile();
 
 const body = document.querySelector("body");
+
 if(mobile === null && detector.tablet() === null) {
    body.style.cssText = "min-height: 600px !important;";
    body.style.cssText = "min-width: 600px !important;";
