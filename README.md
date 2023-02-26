@@ -6,24 +6,20 @@ as an online portfolio. In Addition, it serves the purpose of briefly describing
 
 ## Built with
 
-* PhpStorm
-* JavaScript
 * HTML
 * CSS
+* JavaScript
+* PhpStorm
 
-<br>
 
 # Webpage
 
-The website portfolio is hosted via GitHub pages and you can visit it [here](https://https://zulfahmizaid.github.io/WebsitePortfolio/)
-
-<br>
+The website portfolio is hosted via GitHub pages and you can visit it [here](https://zulfahmizaid.github.io/WebsitePortfolio/)
 
 # Contribution
+
 This was my first project-based learning for JavaScript
 * Pacman Project - [Chris Course](https://youtu.be/5IMXpp3rohQ)
-
-<br>
 
 # Contact
 
