@@ -6,9 +6,10 @@ as an online portfolio. In Addition, it serves the purpose of briefly describing
 
 ## Built with
 
-* PhpStorm
-* JavaScript
 * HTML
+* CSS
+* JavaScript
+* PhpStorm
 
 
 # Webpage
