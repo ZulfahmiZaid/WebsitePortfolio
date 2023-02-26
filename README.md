@@ -13,7 +13,7 @@ as an online portfolio. In Addition, it serves the purpose of briefly describing
 
 # Webpage
 
-The website portfolio is hosted via GitHub pages and you can visit it [here](https://https://zulfahmizaid.github.io/WebsitePortfolio/)
+The website portfolio is hosted via GitHub pages and you can visit it [here](https://zulfahmizaid.github.io/WebsitePortfolio/)
 
 # Contribution
 
