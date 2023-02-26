@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <title>PacMan</title>
-<style>
+    <script src="https://kit.fontawesome.com/4bafb4d0bb.js" crossorigin="anonymous"></script>
+    <style>
     body{
         margin: 0 0 50% 0;
         background-color: black;
@@ -18,17 +19,42 @@
         position: relative;
     }
     .center{
-       margin-left: 35%;
+        margin-left: 35%;
     }
     a:hover{
         color: yellow;
+    }
+    .ArrowKeys{
+        position: absolute;
+    }
+    .UP{
+        bottom: 1.1rem;
+        left: 411px;
+    }
+    .REST{
+        left: 286px;
     }
 </style>
 </head>
 <body>
 <div class="center">
+    <div class="">
+        <div class="flexcenter">
+
+        </div>
+        <div class="UAD">
+
+        </div>
+    </div>
 <p class="score">
     <span>Score: </span><span id="current_score">0</span>
+    <span class="ArrowKeys UP"><i class="fa-solid fa-arrow-up"></i></span>
+    <span class="ArrowKeys REST">
+        Use Arrowkeys: &nbsp;
+         <i class="fa-solid fa-arrow-left"></i>
+            <i class="fa-solid fa-arrow-down"></i>
+            <i class="fa-solid fa-arrow-right"></i>
+    </span>
 </p>
 <canvas>
 
