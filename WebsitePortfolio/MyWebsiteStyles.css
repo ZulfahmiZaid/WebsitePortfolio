@@ -445,6 +445,22 @@ textarea{
     height: 100%;
     object-fit: cover;
 }
+#E-Mensa{
+    object-fit: contain;
+}
+.Column.C2 > div:first-child{
+    background-image: linear-gradient(darkorange,lightcoral,darkred);
+    position: relative;
+}
+.Column.C2 > div:first-child:before{
+    content: "E-Mensa";
+    position: absolute;
+    font-size: 1.5rem;
+    text-align: center;
+    top: 5px;
+    left: 25%;
+}
+
 .Project:hover{
     border: 2px solid darkturquoise;
     animation: pop 0.3s linear;
@@ -759,6 +775,9 @@ textarea{
     .Project{
         width: 80%;
         height: 25%;
+    }
+    .Column.C2 > div:first-child:before {
+        display: none;
     }
     .Close-Projects{
         position: absolute;
