@@ -9,18 +9,16 @@ as an online portfolio. In Addition, it serves the purpose of briefly describing
 * PhpStorm
 * JavaScript
 * HTML
-* CSS
-<br>
+
 
 # Webpage
 
 The website portfolio is hosted via GitHub pages and you can visit it [here](https://https://zulfahmizaid.github.io/WebsitePortfolio/)
-<br>
 
 # Contribution
+
 This was my first project-based learning for JavaScript
 * Pacman Project - [Chris Course](https://youtu.be/5IMXpp3rohQ)
-<br>
 
 # Contact
 
