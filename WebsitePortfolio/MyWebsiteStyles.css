@@ -788,7 +788,9 @@ textarea{
         width: 80%;
         height: 25%;
     }
-    .Column.C2 > div:first-child:before {
+    .Column.C2 > div:first-child:before,
+    .Column.C2 > div:nth-child(2):before
+    {
         display: none;
     }
     .Close-Projects{
