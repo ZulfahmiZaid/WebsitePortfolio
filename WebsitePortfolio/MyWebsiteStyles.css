@@ -278,19 +278,19 @@ button:hover{
 }
 
 .HTML span,.CSS span{
-    width: 85%;
+    width: 80%;
 }
 .PHP span, .MySQL span{
-    width: 70%;
+    width: 65%;
 }
 .CPP span{
-     width: 70%;
+     width: 60%;
 }
 .JavaScript span{
     width: 50%;
 }
 .Java span{
-    width: 75%;
+    width: 70%;
 }
 .Socials{
     background-color: white;
@@ -445,22 +445,34 @@ textarea{
     height: 100%;
     object-fit: cover;
 }
-#E-Mensa{
+#E-Mensa, #Bank{
     object-fit: contain;
 }
-.Column.C2 > div:first-child{
-    background-image: linear-gradient(darkorange,lightcoral,darkred);
+.Column.C2 > div:first-child {
+     background-image: linear-gradient(darkorange,lightcoral,darkred);
+     position: relative;
+ }
+.Column.C2 > div:nth-child(2){
+    background-image: linear-gradient(black,darkgrey,black);
     position: relative;
 }
-.Column.C2 > div:first-child:before{
-    content: "E-Mensa";
+.Column.C2 > div:first-child:before,
+.Column.C2 > div:nth-child(2):before
+{
     position: absolute;
     font-size: 1.5rem;
     text-align: center;
     top: 5px;
     left: 25%;
 }
-
+.Column.C2 > div:first-child:before{
+    content: "E-Mensa";
+}
+.Column.C2 > div:nth-child(2):before{
+    content: "Java Bank";
+    color: ghostwhite;
+    left: 23%;
+}
 .Project:hover{
     border: 2px solid darkturquoise;
     animation: pop 0.3s linear;
