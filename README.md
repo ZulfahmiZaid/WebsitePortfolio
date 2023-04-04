@@ -21,6 +21,8 @@ The website portfolio is hosted via GitHub pages and you can visit it [here](htt
 This was my first project-based learning for JavaScript
 * Pacman Project - [Chris Course](https://youtu.be/5IMXpp3rohQ)
 
+The contact form is built with [FormSubmit](https://formsubmit.co/) API
+
 # Contact
 
 Email : fahmi.zaid1412@gmail.com
